@@ -10,17 +10,29 @@ info:
     url: http://blog.cliffano.com
     email: blah@cliffano.com
 conversations:
-  - messages:
-      - Get me my data
-      - I want my data now
-      - Retrieve my data
-    reply: Here is your data... {data}
+  - name: Retrieving data
+    messages:
+      en:
+        - Get me my data
+        - I want my data now
+        - Retrieve my data
+      de:
+        - Hol mir meine Daten
+    reply:
+      en: Here is your data... {data}
+      de: Hier sind Ihre Daten ... {data}
     openapi3_cloudfunctions:
       operation_id: getData1
-  - messages:
-      - Here's my data
-      - Sending my data
-    reply: Finished sending your data
+  - name: Submitting data
+    messages:
+      en:
+        - Here's my data
+        - Sending my data
+      de:
+        - Senden meiner Daten
+    reply:
+      en: Finished sending your data
+      de: Fertig Senden Ihrer Daten
     openapi3_cloudfunctions:
       operation_id: postData2
 middlewares:

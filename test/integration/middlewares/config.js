@@ -23,17 +23,23 @@ describe('OpenAPI3-CloudFunctions Middleware Config', function() {
     });
     it('should contain conversation with default API', function() {
       const conversations = this.config.conversations();
+      assert.equal(conversations[1].name, 'Submitting data');
       assert.equal(conversations[1].api, 'someTag');
       assert.equal(conversations[1].method, 'postData2');
-      assert.equal(conversations[1].reply, 'Finished sending your data');
-      assert.equal(conversations[1].messages.length, 2);
+      assert.equal(conversations[1].reply.en, 'Finished sending your data');
+      assert.equal(conversations[1].messages.en.length, 2);
+      assert.equal(conversations[1].reply.de, 'Fertig Senden Ihrer Daten');
+      assert.equal(conversations[1].messages.de.length, 1);
     });
     it('should contain conversation with non-default API', function() {
       const conversations = this.config.conversations();
+      assert.equal(conversations[0].name, 'Retrieving data');
       assert.equal(conversations[0].api, 'defaultApi');
       assert.equal(conversations[0].method, 'getData1');
-      assert.equal(conversations[0].reply, 'Here is your data... {data}');
-      assert.equal(conversations[0].messages.length, 3);
+      assert.equal(conversations[0].reply.en, 'Here is your data... {data}');
+      assert.equal(conversations[0].messages.en.length, 3);
+      assert.equal(conversations[0].reply.de, 'Hier sind Ihre Daten ... {data}');
+      assert.equal(conversations[0].messages.de.length, 1);
     });
   });
 });
