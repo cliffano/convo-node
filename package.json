@@ -7,7 +7,7 @@
   ],
   "main": "./lib/convo",
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha --timeout 5000 test/integration/*/*.js"
+    "test": "node_modules/mocha/bin/mocha --timeout 5000 test/integration/*/*/*.js"
   },
   "dependencies": {
     "sync": "^0.2.5",
