@@ -42,6 +42,13 @@ paths:
       tags:
         - someTag
 components:
+  securitySchemes:
+    some_http_basic_auth1:
+      type: http
+      scheme: basic
+    some_http_basic_auth2:
+      type: http
+      scheme: basic
   schemas:
     SomeData:
       required:

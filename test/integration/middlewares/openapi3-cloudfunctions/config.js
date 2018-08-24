@@ -42,4 +42,14 @@ describe('OpenAPI3-CloudFunctions Middleware Config', function() {
       assert.equal(conversations[0].messages.de.length, 1);
     });
   });
+  describe('basicHttpAuths', function() {
+    it('should return true when it contains basic HTTP authentications', function() {
+      assert.equal(this.config.hasBasicHttpAuths(), true);
+    });
+    it('should retrieve basic HTTP authentications', function() {
+      assert.equal(this.config.basicHttpAuths.length, 2);
+      assert.equal(this.config.basicHttpAuths[0], 'some_http_basic_auth1');
+      assert.equal(this.config.basicHttpAuths[1], 'some_http_basic_auth2');
+    });
+  });
 });
