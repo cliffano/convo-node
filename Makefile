@@ -1,3 +1,5 @@
+ci: deps test install
+
 deps:
 	npm install .
 
@@ -7,4 +9,4 @@ test:
 install:
 	npm link
 
-.PHONY: deps test install
+.PHONY: ci deps test install
