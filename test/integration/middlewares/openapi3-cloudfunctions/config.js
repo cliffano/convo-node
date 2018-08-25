@@ -13,7 +13,7 @@ describe('OpenAPI3-CloudFunctions Middleware Config', function() {
       assert.equal(Object.keys(this.config.apis()).includes('defaultApi'), true);
     });
     it('should contain non-default API based on the tag', function() {
-      assert.equal(Object.keys(this.config.apis()).includes('someTag'), true);
+      assert.equal(Object.keys(this.config.apis()).includes('someTagApi'), true);
     });
   });
   describe('conversations', function() {
@@ -24,7 +24,7 @@ describe('OpenAPI3-CloudFunctions Middleware Config', function() {
     it('should contain conversation with default API', function() {
       const conversations = this.config.conversations();
       assert.equal(conversations[1].name, 'Submitting data');
-      assert.equal(conversations[1].api, 'someTag');
+      assert.equal(conversations[1].api, 'someTagApi');
       assert.equal(conversations[1].method, 'postData2');
       assert.equal(conversations[1].reply.en, 'Finished sending your data');
       assert.equal(conversations[1].messages.en.length, 2);
