@@ -1,7 +1,7 @@
 {
   "name": "convo-node",
   "version": "0.0.2",
-  "description": "Convo node.js library",
+  "description": "node.js library for Convo ChatOps tool",
   "keywords": [
     "convo"
   ],
@@ -12,7 +12,9 @@
     "publish-coverage": "cat stage/coverage.lcov | node_modules/coveralls/bin/coveralls.js"
   },
   "dependencies": {
+    "mustache": "^2.3.2",
     "sync": "^0.2.5",
+    "underscore": "^1.9.1",
     "voca": "^1.4.0",
     "yaml": "^1.0.0-rc.7"
   },
