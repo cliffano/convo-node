@@ -3,7 +3,8 @@
   "version": "0.0.2",
   "description": "node.js library for Convo ChatOps tool",
   "keywords": [
-    "convo"
+    "convo",
+    "dialogflow"
   ],
   "main": "./lib/convo",
   "scripts": {
