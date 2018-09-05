@@ -7,7 +7,7 @@
 <br/>
 [![npm Badge](https://nodei.co/npm/convo-node.png)](http://npmjs.org/package/convo-node)
 
-Convo Node
+convo-node
 ----------
 
 Convo Node is node.js utility module for [Convo](https://github.com/cliffano/convo) voice framework.
