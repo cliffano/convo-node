@@ -1,5 +1,5 @@
 const assert = require('assert');
-const dialogFlowPayload = require('../../../../lib/agents/dialogflow2/payload')
+const dialogFlowPayload = require('../../../lib/agents/dialogflow/payload')
 
 describe('DialogFlow Agent Payload', function() {
   describe('getConversationNameFromPayload', function() {
@@ -11,7 +11,7 @@ describe('DialogFlow Agent Payload', function() {
           }
         }
       };
-      assert.equal(dialogFlowPayload.getConversationNameFromPayload(payloadFromDialogFlow), 'Some conversation');
+      assert.equal(dialogFlowPayload.getConversationName(payloadFromDialogFlow), 'Some conversation');
     });
   });
   describe('getLanguageFromPayload', function() {
@@ -21,12 +21,12 @@ describe('DialogFlow Agent Payload', function() {
           languageCode: 'de'
         }
       };
-      assert.equal(dialogFlowPayload.getConversationLanguageFromPayload(payloadFromDialogFlow), 'de');
+      assert.equal(dialogFlowPayload.getConversationLanguage(payloadFromDialogFlow), 'de');
     });
   });
   describe('createReplyPayload', function() {
     it('should contain expected properties', function() {
-      const payloadToDialogFlow = dialogFlowPayload.createReplyPayload('some reply');
+      const payloadToDialogFlow = dialogFlowPayload.createReply('some reply');
       assert.equal(payloadToDialogFlow.fulfillmentText, 'some reply');
     });
   });
