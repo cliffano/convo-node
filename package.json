@@ -1,7 +1,7 @@
 {
   "name": "convo-node",
   "version": "0.0.2",
-  "description": "node.js library for Convo ChatOps tool",
+  "description": "node.js utility module for Convo voice framework",
   "keywords": [
     "convo",
     "dialogflow"
