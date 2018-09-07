@@ -8,7 +8,7 @@
   ],
   "main": "./lib/convo",
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha --timeout 5000 test/agents/*/*.js",
+    "test": "node_modules/mocha/bin/mocha --timeout 5000 test/common/*.js test/agents/*/*.js",
     "coverage": "node_modules/mocha/bin/mocha --require mocha-lcov-reporter --reporter mocha-lcov-reporter --timeout 5000 test/agents/*/*.js",
     "publish-coverage": "cat stage/coverage.lcov | node_modules/coveralls/bin/coveralls.js"
   },
