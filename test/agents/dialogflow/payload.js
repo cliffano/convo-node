@@ -2,26 +2,26 @@ const assert = require('assert');
 const dialogFlowPayload = require('../../../lib/agents/dialogflow/payload')
 
 describe('DialogFlow Agent Payload', function() {
-  describe('getConversationNameFromPayload', function() {
-    it('should use intent display name as conversation name', function() {
+  describe('getQueryNameFromPayload', function() {
+    it('should use intent display name as query name', function() {
       const payloadFromDialogFlow = {
         queryResult: {
           intent: {
-            displayName: 'Some conversation'
+            displayName: 'Some query'
           }
         }
       };
-      assert.equal(dialogFlowPayload.getConversationName(payloadFromDialogFlow), 'Some conversation');
+      assert.equal(dialogFlowPayload.getQueryName(payloadFromDialogFlow), 'Some query');
     });
   });
   describe('getLanguageFromPayload', function() {
-    it('should use language code as conversation language', function() {
+    it('should use language code as query language', function() {
       const payloadFromDialogFlow = {
         queryResult: {
           languageCode: 'de'
         }
       };
-      assert.equal(dialogFlowPayload.getConversationLanguage(payloadFromDialogFlow), 'de');
+      assert.equal(dialogFlowPayload.getQueryLanguage(payloadFromDialogFlow), 'de');
     });
   });
   describe('createReplyPayload', function() {
