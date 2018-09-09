@@ -10,7 +10,8 @@
 convo-node
 ----------
 
-Convo Node is node.js utility module for [Convo](https://github.com/cliffano/convo).
+convo-node is node.js utility module for [Convo](https://github.com/cliffano/convo).
+This module is meant to be used by [Convo Generator](http://github.com/cliffano/convo-generator).
 
 Installation
 ------------
