@@ -11,12 +11,13 @@ convo-node
 ----------
 
 convo-node is node.js utility module for [Convo](https://github.com/cliffano/convo).
-This module is meant to be used by [Convo Generator](http://github.com/cliffano/convo-generator).
+
+This module is used by [Convo Generator](http://github.com/cliffano/convo-generator).
 
 Installation
 ------------
 
-    npm install convo-node
+    npm install convo-node --save
 
 Colophon
 --------
