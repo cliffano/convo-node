@@ -8,9 +8,9 @@
   ],
   "main": "./lib/convo",
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha --timeout 5000 test/common/*.js test/agents/*/*.js",
-    "coverage": "node_modules/mocha/bin/mocha --require mocha-lcov-reporter --reporter mocha-lcov-reporter --timeout 5000 test/agents/*/*.js",
-    "publish-coverage": "cat stage/coverage.lcov | node_modules/coveralls/bin/coveralls.js"
+    "test": "node_modules/.bin/mocha --timeout 5000 test/common/*.js test/agents/*/*.js",
+    "coverage": "node_modules/.bin/istanbul cover --dir stage/coverage _mocha -- test/common/*.js test/agents/*/*.js",
+    "publish-coverage": "cat stage/coverage/lcov.info | node_modules/.bin/coveralls"
   },
   "dependencies": {
     "mustache": "^2.3.2",
@@ -19,8 +19,8 @@
   },
   "devDependencies": {
     "coveralls": "^3.0.2",
-    "mocha": "^5.2.0",
-    "mocha-lcov-reporter": "^1.3.0"
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0"
   },
   "engines": {
     "node": ">= 6.0.0"

@@ -11,7 +11,7 @@ cov:
 	npm run-script coverage
 
 cov-publish:
-	# npm run-script publish-coverage
+	npm run-script publish-coverage
 
 install:
 	npm link
