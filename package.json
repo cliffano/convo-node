@@ -13,9 +13,9 @@
     "publish-coverage": "cat stage/coverage/lcov.info | node_modules/.bin/coveralls"
   },
   "dependencies": {
+    "lodash": "^4.17.11",
     "mustache": "^2.3.2",
-    "sync": "^0.2.5",
-    "underscore": "^1.9.1"
+    "sync": "^0.2.5"
   },
   "devDependencies": {
     "coveralls": "^3.0.2",
