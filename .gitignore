@@ -1,4 +1,5 @@
 .DS_Store
+.bob
 *.log
 node_modules
 stage
