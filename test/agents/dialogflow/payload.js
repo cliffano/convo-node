@@ -24,6 +24,18 @@ describe('DialogFlow Agent Payload', function() {
       assert.equal(dialogFlowPayload.getQueryLanguage(payloadFromDialogFlow), 'de');
     });
   });
+  describe('getQueryParams', function() {
+    it('should pass query parameters', function() {
+      const payloadFromDialogFlow = {
+        queryResult: {
+          parameters: {
+            foo: 'bar'
+          }
+        }
+      };
+      assert.equal(dialogFlowPayload.getQueryParams(payloadFromDialogFlow).foo, 'bar');
+    });
+  });
   describe('createReplyPayload', function() {
     it('should contain expected properties', function() {
       const payloadToDialogFlow = dialogFlowPayload.createReply('some reply');
