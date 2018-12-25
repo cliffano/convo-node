@@ -12,6 +12,8 @@ convo-node
 
 convo-node is node.js utility module for [Convo](https://github.com/cliffano/convo).
 
+It provides convenient functions for handling DialogFlow HTTP request and extracting data from DialogFlow payload, along with functions for data processing and response text rendering.
+
 This module is used by [Convo Generator](http://github.com/cliffano/convo-generator).
 
 Installation
@@ -26,6 +28,3 @@ Related Projects:
 
 * [Convo](http://github.com/cliffano/convo) - Specification based voice and text conversation app
 * [Convo Generator](http://github.com/cliffano/convo-generator) - Convo agent and middleware generator
-* [Convo Jenkins](http://github.com/cliffano/convo-jenkins) - Convo agent and middleware for Jenkins
-* [Convo Jenkins Helper](http://github.com/cliffano/convo-jenkins-helper) - Helper node.js module for Convo Jenkins
-* [Convo ipify](http://github.com/cliffano/convo-ipify) - Convo agent and middleware for ipify
