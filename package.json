@@ -8,6 +8,7 @@
   ],
   "main": "./lib/convo",
   "scripts": {
+    "lint": "node_modules/.bin/jshint lib/ test/",
     "test": "node_modules/.bin/mocha --timeout 5000 test/common/*.js test/agents/*/*.js",
     "coverage": "node_modules/.bin/istanbul cover --dir stage/coverage _mocha -- test/common/*.js test/agents/*/*.js",
     "publish-coverage": "cat stage/coverage/lcov.info | node_modules/.bin/coveralls"
@@ -20,6 +21,7 @@
   "devDependencies": {
     "coveralls": "^3.0.2",
     "istanbul": "^0.4.5",
+    "jshint": "^2.9.7",
     "mocha": "^5.2.0"
   },
   "engines": {

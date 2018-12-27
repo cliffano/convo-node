@@ -1,7 +1,10 @@
-ci: deps test cov cov-publish install
+ci: deps lint test cov cov-publish install
 
 deps:
 	npm install .
+
+lint:
+	npm run-script lint
 
 test:
 	npm run-script test
@@ -16,4 +19,4 @@ cov-publish:
 install:
 	npm link
 
-.PHONY: ci deps test cov cov-publish install
+.PHONY: ci deps lint test cov cov-publish install
