@@ -12,7 +12,7 @@ convo-node
 
 convo-node is node.js utility module for [Convo](https://github.com/cliffano/convo).
 
-It provides convenient functions for handling DialogFlow HTTP request and extracting data from DialogFlow payload, along with functions for data processing and response text rendering.
+It provides convenient functions for Convo DialogFlow agent and some common text processing functions.
 
 This module is used by [Convo Generator](http://github.com/cliffano/convo-generator).
 
