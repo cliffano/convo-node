@@ -4,6 +4,7 @@
 [![Dependencies Status](https://img.shields.io/david/cliffano/convo-node.svg)](http://david-dm.org/cliffano/convo-node)
 [![Coverage Status](https://img.shields.io/coveralls/cliffano/convo-node.svg)](https://coveralls.io/r/cliffano/convo-node?branch=master)
 [![Published Version](https://img.shields.io/npm/v/convo-node.svg)](http://www.npmjs.com/package/convo-node)
+[![Known Vulnerabilities](https://snyk.io/test/github/cliffano/convo-node/badge.svg)](https://snyk.io/test/github/cliffano/convo-node)
 <br/>
 [![npm Badge](https://nodei.co/npm/convo-node.png)](http://npmjs.org/package/convo-node)
 
