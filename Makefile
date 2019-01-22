@@ -19,4 +19,7 @@ cov-publish:
 install:
 	npm link
 
-.PHONY: ci deps lint test cov cov-publish install
+publish:
+	npm publish
+
+.PHONY: ci deps lint test cov cov-publish install publish
