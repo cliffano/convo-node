@@ -1,5 +1,5 @@
 const assert = require('assert');
-const dialogFlowPayload = require('../../../lib/agents/dialogflow/payload')
+const dialogFlowPayload = require('../../../lib/agents/dialogflow/payload');
 
 describe('DialogFlow Agent Payload', function() {
   describe('getQueryNameFromPayload', function() {

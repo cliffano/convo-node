@@ -1,5 +1,5 @@
 const assert = require('assert');
-const TextRenderer = require('../../lib/common/text-renderer')
+const TextRenderer = require('../../lib/common/text-renderer');
 
 describe('TextRenderer', function() {
   beforeEach(function () {

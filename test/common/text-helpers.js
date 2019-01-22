@@ -1,5 +1,5 @@
 const assert = require('assert');
-const textHelpers = require('../../lib/common/text-helpers')
+const textHelpers = require('../../lib/common/text-helpers');
 
 describe('TextHelpers', function() {
   describe('count', function() {
