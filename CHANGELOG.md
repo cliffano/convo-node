@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Modify convo-node module to be an MCP runner
+
 ## [0.0.3] - 2019-01-22
 
 ### Added

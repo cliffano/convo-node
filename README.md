@@ -1,12 +1,12 @@
-<img align="right" src="https://raw.github.com/cliffano/convo-node/master/avatar.jpg" alt="Avatar"/>
+<img align="right" src="https://raw.github.com/cliffano/convo-node/main/avatar.jpg" alt="Avatar"/>
 
-[![Build Status](https://img.shields.io/travis/cliffano/convo-node.svg)](http://travis-ci.org/cliffano/convo-node)
-[![Dependencies Status](https://img.shields.io/david/cliffano/convo-node.svg)](http://david-dm.org/cliffano/convo-node)
+[![Build Status](https://github.com/cliffano/convo-node/workflows/CI/badge.svg)](https://github.com/cliffano/convo-node/actions?query=workflow%3ACI)
+[![Dependencies Status](https://img.shields.io/librariesio/release/npm/convo-node)](https://libraries.io/npm/convo-node)
+[![Code Scanning Status](https://github.com/cliffano/convo-node/workflows/CodeQL/badge.svg)](https://github.com/cliffano/convo-node/actions?query=workflow%3ACodeQL)
 [![Coverage Status](https://img.shields.io/coveralls/cliffano/convo-node.svg)](https://coveralls.io/r/cliffano/convo-node?branch=master)
-[![Published Version](https://img.shields.io/npm/v/convo-node.svg)](http://www.npmjs.com/package/convo-node)
-[![Known Vulnerabilities](https://snyk.io/test/github/cliffano/convo-node/badge.svg)](https://snyk.io/test/github/cliffano/convo-node)
+[![Security Status](https://snyk.io/test/github/cliffano/convo-node/badge.svg)](https://snyk.io/test/github/cliffano/convo-node)
+[![Published Version](https://img.shields.io/npm/v/convo-node.svg)](https://www.npmjs.com/package/convo-node)
 <br/>
-[![npm Badge](https://nodei.co/npm/convo-node.png)](http://npmjs.org/package/convo-node)
 
 convo-node
 ----------
