@@ -53,25 +53,24 @@ Create tools:
 
     const tool2 = ...
 
+    const tools: [
+      tool1,
+      tool2
+    ]
+
 Create application directory which is the location of the node.js module file which uses convo-node:
 
     import p from 'path';
 
     const appDir = p.dirname(import.meta.url).replace('file://', '');
 
-
 Create options callback function which accepts CLI arguments and returns the options object:
 
-    function optsCb(args) {
+    function toolOptsCb(args) {
 
-      // opts must contain tools property which is an array of MCP tools
-      // and any other property that could be needed by the tools
+      // opts contains properties that could be needed by the tools handler function
       const opts = {
-        param1: 'value1',
-        tools: [
-          tool1,
-          tool2
-        ]
+        param1: 'value1'
       };
 
       return opts;
@@ -80,7 +79,7 @@ Create options callback function which accepts CLI arguments and returns the opt
 
 Execute Convo:
 
-    convo.exec(appDir, optsCb)();
+    convo.exec(appDir, tools, toolOptsCb)();
 
 Colophon
 --------
