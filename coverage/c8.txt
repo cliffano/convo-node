@@ -1,0 +1,17 @@
+test | /opt/hostedtoolcache/node/20.19.4/x64/lib/node_modules/bob/node_modules/.bin/mocha --colors --reporter spec --recursive test/
+
+[0m[0m
+[0m  cli - exec[0m
+  [32m  [32m✔[39m[0m[90m should contain commands with actions[0m
+
+
+[92m [0m[32m 1 passing[0m[90m (10ms)[0m
+
+SUCCESS | exit code 0
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------|---------|----------|---------|---------|-------------------
+All files |   84.55 |      100 |   66.66 |   84.55 |                   
+ cli.js   |     100 |      100 |     100 |     100 |                   
+ convo.js |   72.46 |      100 |   33.33 |   72.46 | 26-34,47-53,61-63 
+----------|---------|----------|---------|---------|-------------------
