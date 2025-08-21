@@ -1,11 +1,11 @@
-test | /opt/hostedtoolcache/node/24.6.0/x64/lib/node_modules/bob/node_modules/.bin/mocha --colors --reporter spec --recursive test/
+test | /opt/hostedtoolcache/node/20.19.4/x64/lib/node_modules/bob/node_modules/.bin/mocha --colors --reporter spec --recursive test/
 
 [0m[0m
 [0m  cli - exec[0m
   [32m  [32m✔[39m[0m[90m should contain commands with actions[0m
 
 
-[92m [0m[32m 1 passing[0m[90m (9ms)[0m
+[92m [0m[32m 1 passing[0m[90m (10ms)[0m
 
 SUCCESS | exit code 0
 ----------|---------|----------|---------|---------|-------------------
