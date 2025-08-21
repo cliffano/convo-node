@@ -12,9 +12,6 @@
   "coverage": {
     "type": "c8"
   },
-  "test-integration": {
-    "type": "cmdt"
-  },
   "doc": {
     "type": "jsdoc"
   },

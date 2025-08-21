@@ -91,7 +91,6 @@ Build reports:
 * [Code complexity report](https://cliffano.github.io/convo-node/complexity/plato/index.html)
 * [Unit tests report](https://cliffano.github.io/convo-node/test/mocha.txt)
 * [Test coverage report](https://cliffano.github.io/convo-node/coverage/c8/index.html)
-* [Integration tests report](https://cliffano.github.io/convo-node/test-integration/cmdt.txt)
 * [API Documentation](https://cliffano.github.io/convo-node/doc/jsdoc/index.html)
 
 
